@@ -1,0 +1,20 @@
+[ignore]
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+    module.file_ext=.js
+    module.file_ext=.scss
+    module.name_mapper='\(/[a-zA-Z]+$\)' -> '\1\1'
+    module.name_mapper='^components' ->'<PROJECT_ROOT>/src/components'
+    module.name_mapper='^scenes' ->'<PROJECT_ROOT>/src/scenes'
+    module.name_mapper='^services' ->'<PROJECT_ROOT>/src/services'
+    module.name_mapper='^stores' ->'<PROJECT_ROOT>/src/services/stores'
+    module.name_mapper='^security' ->'<PROJECT_ROOT>/src/services/security'
+    module.name_mapper='^routes' ->'<PROJECT_ROOT>/src/routes'
+
+[strict]
